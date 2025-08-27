@@ -1,0 +1,9 @@
+[package]
+name = "repovia_executor"
+version = "1.0.0"
+authors = ["Ryan Bruno <ryanbruno506@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+polling = "3.7.4"
