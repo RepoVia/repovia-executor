@@ -37,7 +37,7 @@ impl Future for AsyncReadLineFuture<'_> {
             {
                 let reader = self.stream.reader();
                 match reader.fill_buf() {
-                    Ok(buf) if buf.is_empty() => {
+                    Ok([]) => {
                         complete = true;
                     }
                     Ok(buf) => {

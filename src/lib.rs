@@ -1,8 +1,8 @@
 #![feature(local_waker)]
 
 mod executor;
-pub use crate::executor::NetExecutor;
 use crate::executor::BoxFuture;
+pub use crate::executor::NetExecutor;
 use crate::executor::NetTask;
 
 mod r#async;
